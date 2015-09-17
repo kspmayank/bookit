@@ -1,13 +1,4 @@
 <h1>hy</h1>
-<% form_tag 'create', url: '', :multipart => true do %>
-  <%= text_field_tag 'name', 'Enter your name' %>
-  <%= password_field_tag 'password', 'Your password here' %>
-  <%= text_field_tag 'email', 'Enter your email' %>
-  <%= text_field_tag 'mobile', 'Enter your mobile no' %>
-  <%= file_field_tag 'file' %>
-  <%= file_field_tag 'img' %>
-  <%= submit_tag "Send Attachment" %>
-<% end %>
 
 <%= form_for :user, url: '/create' do |f| %>
   First name: <%= f.text_field :name %><br />

@@ -29,9 +29,9 @@ ActiveRecord::Schema.define(version: 20150917190851) do
     t.string   "name"
     t.string   "email"
     t.string   "password_hash"
-    t.binary   "image"
+    t.text     "image"
     t.string   "mobile"
-    t.binary   "file"
+    t.text     "file"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

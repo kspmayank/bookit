@@ -4,9 +4,9 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :email
       t.string :password_hash
-      t.binary :image
+      t.text :image
       t.string :mobile
-      t.binary :file
+      t.text :file
 
       t.timestamps null: false
     end

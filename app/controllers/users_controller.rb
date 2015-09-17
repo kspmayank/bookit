@@ -5,9 +5,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.create(name: params[:user][:name], email: params[:user][:email], mobile: params[:user][:mobile])
   	@user.password = params[:user][:password]
-  	#p @user.uploaded_file = params["file"]
-  	#@user.uploaded_image = params[:img]
-  	@user.file = document_params[:file].tempfile.read
+  	#@user.fl = Base64.encode64('#{document_params[:file].tempfile.read.to_s}')
   	@user.save!
   end
 
